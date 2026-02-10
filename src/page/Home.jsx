@@ -3,24 +3,35 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { homeSlides } from '../data/homeSlides';
+import './Home.css'
 const Home = () => {
   return (
     <section>
       <div className="inner">
 
         <h2>home</h2>
-        <Swiper pagination={true} modules={[Navigation, Pagination]} className="mySwiper">
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+        <Swiper
+          navigation={true}
+          // autoplay={true}
+          loop
+          modules={[Navigation, Pagination, Autoplay]}
+          pagination={true}
+          className="mySwiper">
+          {homeSlides.map(({ id, title, img, subtitle }) => (
+
+            <SwiperSlide key={id} style={{ backgroundImage: `url(${img})`, height:500}}>
+
+              <h4>
+                {title}
+              </h4>
+              <p>{subtitle}</p>
+            </SwiperSlide>
+          ))}
+
         </Swiper>
       </div>
     </section>
