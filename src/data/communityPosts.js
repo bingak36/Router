@@ -1,0 +1,42 @@
+export const communityPosts = [
+  {
+    id: 1,
+    title: "React Router 시작하기",
+    content: "라우터 기본 개념과 설정 방법을 정리했습니다.",
+    author: "admin",
+    date: "2026-05-18",
+    comments: 3,
+  },
+  {
+    id: 2,
+    title: "URL 파라미터 이해하기",
+    content: "useParams로 동적 세그먼트를 읽는 방법입니다.",
+    author: "admin",
+    date: "2026-05-17",
+    comments: 1,
+  },
+  {
+    id: 3,
+    title: "NavLink와 활성 스타일",
+    content: "활성 경로에 스타일을 주는 방법을 다룹니다.",
+    author: "admin",
+    date: "2026-05-16",
+    comments: 5,
+  },
+  {
+    id: 4,
+    title: "중첩 라우트와 Outlet",
+    content: "레이아웃과 자식 라우트를 함께 구성하는 예시입니다.",
+    author: "admin",
+    date: "2026-05-15",
+    comments: 0,
+  },
+  {
+    id: 5,
+    title: "404 페이지 처리하기",
+    content: "path='*'를 사용해 NotFound 페이지를 매핑합니다.",
+    author: "admin",
+    date: "2026-05-14",
+    comments: 2,
+  },
+];

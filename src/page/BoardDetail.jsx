@@ -2,7 +2,7 @@ import React from 'react'
 
 function BoardDetail() {
   return (
-    <div>BoardDetail</div>
+    <section>BoardDetail</section>
   )
 }
 

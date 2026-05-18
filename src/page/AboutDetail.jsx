@@ -6,7 +6,7 @@ const AboutDetail = () => {
     const {id}=useParams()
   
     return (
-    <div>{id}번의 AboutDetail페이지</div>
+    <section>{id}의 AboutDetail페이지</section>
   )
 }
 

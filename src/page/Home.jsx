@@ -10,7 +10,7 @@ import { homeSlides } from '../data/homeSlides';
 import './Home.css'
 const Home = () => {
   return (
-    <section>
+    <section className='home'>
       <div className="inner">
 
         <h2>home</h2>
@@ -20,15 +20,18 @@ const Home = () => {
           loop
           modules={[Navigation, Pagination, Autoplay]}
           pagination={true}
-          className="mySwiper">
+          className="home-slider">
           {homeSlides.map(({ id, title, img, subtitle }) => (
 
-            <SwiperSlide key={id} style={{ backgroundImage: `url(${img})`, height:500}}>
+            <SwiperSlide key={id} style={{ backgroundImage: `url(${img})` }}>
+              <div className="inner">
 
-              <h4>
-                {title}
-              </h4>
-              <p>{subtitle}</p>
+
+                <h4>
+                  {title}
+                </h4>
+                <p>{subtitle}</p>
+              </div>
             </SwiperSlide>
           ))}
 

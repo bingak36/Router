@@ -1,0 +1,42 @@
+.board {
+  text-align: center;
+}
+
+.board-list {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board-list li {
+  width: 30rem;
+  min-height: 20rem;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  align-content: center;
+  background-color: slateblue;
+  transition: all .3s;
+}
+
+.board-list li:hover {
+  background-color: rgb(72, 58, 161);
+  transform: scale(1.05);
+}
+
+.board-list li span {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.board-list li h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.board-list li p {
+  font-size: 1.3rem;
+  opacity: .6;
+}
