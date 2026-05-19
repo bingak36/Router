@@ -1,18 +1,8 @@
-# React + Vite
+이 프로젝트는 React와 React Router를 사용해 만든 간단한 SPA 웹사이트입니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  홈, 소개, 회사, 게시판 페이지로 구성되어 있으며, 상단 헤더의 네비게이션을 통해 각 페이지로 이동할 수 있습니다. 홈 화면에는
+  Swiper를 사용한 이미지 슬라이드가 있고, 게시판 페이지에는 여러 게시글을 카드 형태로 보여주는 커뮤니티 보드가 있습니다. 푸터에
+  는 Notion, GitHub, KakaoTalk 링크가 배치되어 있습니다.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  전체적으로 React Router의 기본 라우팅, 동적 경로, 컴포넌트 분리, 데이터 배열 렌더링, CSS 스타일링을 연습하기 위한 프론트엔드
+  프로젝트입니다.
